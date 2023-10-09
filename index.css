@@ -1,0 +1,296 @@
+:root {
+  --primary: #f99417;
+  --secondary: #cd5c08;
+  --hover: #f1a447d5;
+  --black: #000000;
+  --white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  color: inherit;
+  text-decoration: none;
+  transition: 0.2s linear;
+  list-style: none;
+}
+
+/* Header */
+
+#header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 12vh;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+  font-size: 20px;
+  color: var(--secondary);
+}
+
+#header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+  gap: 20px;
+}
+
+#header__content {
+  width: 40%;
+}
+
+#header__pizza {
+  width: 40%;
+}
+
+#header__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  color: var(--secondary);
+  line-height: 1.2;
+}
+
+#header__info__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header__info__text {
+  width: 70%;
+}
+
+#header__info__text h4 {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#header__h1 {
+  color: var(--secondary);
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#header__h1 span {
+  color: var(--primary);
+}
+
+#header__btn {
+  padding: 15px 40px;
+  background-color: var(--primary);
+  font-weight: bold;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+#header__btn:hover {
+  background-color: var(--hover);
+}
+
+/* End of Header */
+
+/* Pizza-menu */
+
+#pizza__menu h2 {
+  text-align: center;
+  color: var(--secondary);
+  font-size: 40px;
+  margin: 30px;
+}
+
+#pizza__list {
+  margin: 50px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+#pizza__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 50vh;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+}
+
+#pizza__btn {
+  background-color: var(--primary);
+  cursor: pointer;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#pizza__btn:hover {
+  background-color: var(--hover);
+}
+
+/* End of Pizza-menu */
+
+/* Contact */
+
+#contact__section {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 100vh;
+}
+
+#contact__content {
+  width: 30%;
+  color: var(--secondary);
+}
+
+#contact__content h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+#contact__content p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#contact__content span {
+  color: var(--primary);
+}
+
+#contact__form {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact__form label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+#contact__form input {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: solid 1px var(--secondary);
+  font-size: 20px;
+  color: var(--secondary);
+}
+
+#contact__form ::placeholder {
+  color: var(--secondary);
+  opacity: 0.5;
+}
+
+#contact__fg {
+  width: 20%;
+}
+
+#contact__fg img {
+  width: 100%;
+}
+
+#form__btn {
+  width: 100%;
+  background-color: var(--primary);
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+#form__btn:hover {
+  background-color: var(--hover);
+}
+
+/* End of  Contact*/
+
+/* Pop Up */
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+}
+
+#close__pop {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* End of Pop Up */
+
+/* Modal Img */
+
+#modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+}
+
+#modal__img {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#close__img {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: var(--black);
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* End of Modal Img */
